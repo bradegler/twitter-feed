@@ -37,8 +37,6 @@ spec:
             - path: "labels"
               fieldRef:
                 fieldPath: metadata.labels
-      imagePullSecrets:
-        - name: ocir
 ---
 apiVersion: v1
 kind: Service
