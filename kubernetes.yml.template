@@ -28,6 +28,8 @@ spec:
             - name: podinfo
               mountPath: /tmp
               readOnly: false
+      imagePullSecrets:
+        - name: ocirsecret
       volumes:
         - name: podinfo
           downwardAPI:
