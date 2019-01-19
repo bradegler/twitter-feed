@@ -47,7 +47,8 @@ metadata:
     commit: ${WERCKER_GIT_COMMIT}
 spec:
   ports:
-  - port: 30000
+  - name: twitter-feed
+    port: 30000
     targetPort: ${PORT}
   selector:
     app: twitter-feed
